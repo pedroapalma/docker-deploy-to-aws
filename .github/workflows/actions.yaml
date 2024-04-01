@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Set permissions for private key
-    run: |
+      run: |
         echo "${{ env.SSH_KEYPAIR }}" > key.pem
         chmod 600 key.pem
     - name: Clean Docker image
